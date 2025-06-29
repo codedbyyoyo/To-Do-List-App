@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="main-header">
+        <div class="container">
+            <h1>What's on your mind today?</h1>
+
+            <form action="" id="todo-form">
+                <input type="text" name="task-name" placeholder="e.g. Water the plants" autofocus>
+                <button type="submit" class="svg-btn">
+                <svg viewBox="0 0 225 225" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="x" x="92.7" width="45" height="225" rx="22.5"/>
+                    <rect class="x" x="225" y="92.7" width="45" height="225" rx="22.5" transform="rotate(90 225 92.7)"/>
+                </svg>
+                </button>
+            </form>
+        </div>
+    </header>
+
+    <section>
+        <div class="container" id="main-content">
+            <ul class="stats">
+                <li>
+                    <span>Remaining</span>
+                    <span id="remaining-tasks">0</span>
+                </li>
+
+                <li>
+                    <span>Completed</span>
+                    <span id="completed-tasks">0</span>
+                </li>
+
+                <li>
+                    <span>Total</span>
+                    <span id="total-tasks">0</span>
+                </li>
+            </ul>
+
+            <ul class="todos"></ul>
+
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
